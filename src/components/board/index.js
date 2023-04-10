@@ -19,9 +19,9 @@ const Board = () => {
   const checkUser = (user) => {
     if (playMode === "cpu") {
       if (user === activeUser) {
-        return "(you)";
+        return "(Toi)";
       } else {
-        return "(cpu)";
+        return "(PC)";
       }
     }
   };

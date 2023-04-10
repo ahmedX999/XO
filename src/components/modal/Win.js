@@ -9,7 +9,7 @@ const Win = () => {
     <div className="score">
       {winner && winner !== "no" ? (
         <>
-          <p>yoy win!</p>
+          <p>Félicitations !!!</p>
           <h3
             className={`score__title ${
               winner === "o" ? "text-yellow" : "text-blue"
