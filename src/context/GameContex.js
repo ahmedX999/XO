@@ -22,7 +22,7 @@ const GameState = (props) => {
     if (playMode === "cpu" && currentUser !== activeUser && !winner) {
       cpuNextMove(squares);
     }
-    if (playMode === "cpueasy" && currentUser !== activeUser && !winner) {
+    else if (playMode === "cpueasy" && currentUser !== activeUser && !winner) {
       cpuNextMoveeasy(squares);
     }
     checkNoWinner();

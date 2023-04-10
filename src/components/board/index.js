@@ -77,8 +77,8 @@ const Board = () => {
           <strong className="text-2xl"> {ties.x} </strong>
         </div>
         <div className="card bg-light">
-          <p className="text-light">ties</p>
-          <strong className="text-2xl"> {ties.x + ties.o} </strong>
+         <div> <h1> VS  </h1>    </div>
+    
         </div>
         <div className="card bg-yellow">
           <p className="text-light">o {checkUser("o")}</p>
