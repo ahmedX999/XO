@@ -7,6 +7,8 @@ import Xicon from "../icons/Xicon";
 const Start = () => {
   const { activeUser, setActiveUser, handleStart } = useContext(GameContext);
 
+
+
   return (
     <div className="start">
       <div className="start__header">
@@ -33,11 +35,15 @@ const Start = () => {
       </div>
       <div className="start__btns">
         <button className="btn btn-yellow" onClick={() => handleStart("cpu")}>
-        nouveau jeu (vs PC)
+        nouveau jeu (vs PC) Mode difficile
         </button>
+        <button className="btn btn-yellow" onClick={() => handleStart("cpueasy")}>
+        nouveau jeu (vs PC) Mode facile
+        </button>
+
         <button className="btn btn-blue" onClick={() => handleStart("user")}>
           {" "}
-          nouveau jeu (2 vs 2)
+          nouveau jeu (1 vs 1)
         </button>
       </div>
     </div>
